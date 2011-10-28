@@ -58,8 +58,8 @@ module Sass::Rails
         # Display a stack trace in the css output when in development-like environments.
         config.sass.full_exception = app.config.consider_all_requests_local
       end
-      app.assets.context_class.extend(SassContext)
-      app.assets.context_class.sass_config = app.config.sass
+      #app.assets.context_class.extend(SassContext)
+      #app.assets.context_class.sass_config = app.config.sass
 
       Sass.logger = app.config.sass.logger
     end
